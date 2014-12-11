@@ -1,0 +1,19 @@
+diff --git a/menubar.php b/menubar.php
+index c453925..65697b1 100644
+--- a/menubar.php
++++ b/menubar.php
+@@ -90,6 +90,14 @@ $html = '
+ #   down to and including
+ # <!-- end external links -->
+ ?>
++<!-- vds mods to other formats and sites we feed -->
++<p class="sideBarTitle"><?php langtrans('Other Formats'); ?></p>
++<ul>
++   <li><a href="../" title="Weewx Format">Weewx</a></li>
++   <li><a href="http://www.pwsweather.com/obs/KWFEDER15.html" title="PWS Site">PWS</a></li>
++   <li><a href="http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KWAFEDER15" title="CWOP Site">Wunderground</a></li>
++   <li><a href="http://www.findu.com/cgi-bin/wxpage.cgi?call=CW6881" title="CWOP Site">CWOP</a></li>
++</ul>
+ <!-- external links -->
+ <p class="sideBarTitle"><?php langtrans('External Links'); ?></p>
+ <ul>

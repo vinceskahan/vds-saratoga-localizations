@@ -1,0 +1,64 @@
+diff --git a/nws-rssfeed.xml b/nws-rssfeed.xml
+index ad15021..03c7a46 100644
+--- a/nws-rssfeed.xml
++++ b/nws-rssfeed.xml
+@@ -1,27 +1,32 @@
+-<?xml version="1.0" encoding="iso-8859-1"?>
+-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+-<!-- version 1.00 - 10-Jun-2012 -->
+-<channel>
+-  <title>SF Bay Area Weather Alerts</title>
+-  <link>saratoga-weather.org/</link>
+-  <description>Courtesy of the National Weather Service</description>
+-  <language>en-us</language>
+-  <generator>RSS feed version 1.00 - 10-Jun-2012</generator>
+-  <copyright>Curly at ricksturf.com</copyright>
+-  <pubDate>2012-07-28T19:30:03 PDT</pubDate>
+-  <ttl>15</ttl>
+-  <lastBuildDate>2012-07-28T19:30:03 PDT</lastBuildDate>
+-  <item>
+-    <title>Santa Clara Valley</title>
+-    <link>href="http://saratoga-weather.org/"</link>
+-    <pubDate>Sat, 28 Jul 2012 19:30:03 PDT</pubDate>
+-    <description>&lt;a href=&quot;wxnws-details.php?a=CAZ513#WA1&quot; title=&quot;There are no details&quot;&gt;No Alerts&lt;/a&gt; &lt;br/&gt;Severe weather is not expected&lt;br/&gt;&lt;br/&gt; &lt;br/&gt;</description>
+-  </item>
+-  <item>
+-    <title>Santa Cruz</title>
+-    <link>href="http://saratoga-weather.org/"</link>
+-    <pubDate>Sat, 28 Jul 2012 19:30:03 PDT</pubDate>
+-    <description>&lt;a href=&quot;wxnws-details.php?a=CAZ529#WA1&quot; title=&quot;There are no details&quot;&gt;No Alerts&lt;/a&gt; &lt;br/&gt;Severe weather is not expected&lt;br/&gt;&lt;br/&gt; &lt;br/&gt;</description>
+-  </item>
+-</channel>
++<?xml version="1.0" encoding="iso-8859-1"?>
++<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
++<!-- version 1.00 - 10-Jun-2012 -->
++<channel>
++  <title>Tacoma Area Weather Alerts</title>
++  <link>localhost/</link>
++  <description>Courtesy of the National Weather Service</description>
++  <language>en-us</language>
++  <generator>RSS feed version 1.00 - 10-Jun-2012</generator>
++  <copyright>Curly at ricksturf.com</copyright>
++  <pubDate>2014-12-10T18:40:48 PST</pubDate>
++  <ttl>15</ttl>
++  <lastBuildDate>2014-12-10T18:40:48 PST</lastBuildDate>
++  <item>
++    <title>Tacoma Area</title>
++    <link>href="http://localhost/"</link>
++    <pubDate>Wed, 10 Dec 2014 18:40:48 PST</pubDate>
++    <description>&lt;a href=&quot;wxnws-details.php?a=WAZ509#WA2&quot; title=&quot;Click for complete details&quot;&gt;High Wind Watch&lt;/a&gt; &lt;br/&gt;...HIGH WIND WATCH NOW IN EFFECT FROM THURSDAY AFTERNOON THROUGH
++LATE THURSDAY NIGHT...
++* SOME AFFECTED LOCATIONS INCLUDE...SEATTLE...BELLEVUE...
++TACOMA...OLYMPIA...BREMERTON...EDMONDS...AND BREMERTON.
++* TIMING...HIGH WINDS [more]...&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;wxnws-details.php?a=WAZ509#WA1&quot; title=&quot;Click for complete details&quot;&gt;Coastal Flood Watch&lt;/a&gt; &lt;br/&gt;...COASTAL FLOOD WATCH IN EFFECT THURSDAY MORNING...
++THE NATIONAL WEATHER SERVICE IN SEATTLE HAS ISSUED A COASTAL
++FLOOD WATCH...WHICH IS IN EFFECT THURSDAY MORNING.
++* IMPACTS...TIDAL OVERFLOW MAY PRODUCE FLOODING IN LOW LYING
++AREAS [more]...&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;wxnws-details.php?a=WAZ509#WA3&quot; title=&quot;Click for complete details&quot;&gt;Special Weather Statement&lt;/a&gt; &lt;br/&gt;...HEAVY RAINFALL THROUGH THIS EVENING WILL LEAD TO AN INCREASED
++RISK OF LANDSLIDES IN WESTERN WASHINGTON...
++RAINFALL OF 2 TO 4 INCHES ON THE OLYMPIC RANGE AND GENERALLY A
++HALF TO 1.75 INCHES ELSEWHERE HAS FALLEN DURING THE [more]...&lt;br/&gt;&lt;br/&gt; &lt;br/&gt;</description>
++  </item>
++</channel>
+ </rss>
+\ No newline at end of file

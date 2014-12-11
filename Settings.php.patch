@@ -1,0 +1,94 @@
+diff --git a/Settings.php b/Settings.php
+index 9f8288a..f15c22c 100644
+--- a/Settings.php
++++ b/Settings.php
+@@ -99,15 +99,14 @@ $SITE['monthNames'] = array(  // for wxastronomy page .. replace with month name
+ ############################################################################
+ # Sitewide configuration - Station location, identity and date/time info
+ ############################################################################
+-
+-$SITE['organ']			= 'USA Website with PHP &amp; AJAX';
+-$SITE['copyr']			= '&copy; ' . date("Y",time()) . ', Your Weather Website';
+-$SITE['location']       = 'Somewhere, SomeState, USA';
+-$SITE['email']			= 'mailto:somebody@somemail.org';
++$SITE['organ']			= 'skahan.net weather report';
++$SITE['copyr']			= '&copy; ' . date("Y",time()) . ', skahan.net';
++$SITE['location']       = 'Federal Way, WA, USA';
++$SITE['email']			= 'mailto:vince@skahan.net';
+ # Station location: latitude, longitude, cityname
+-$SITE['latitude']		= '37.27153397';    //North=positive, South=negative decimal degrees
+-$SITE['longitude']		= '-122.02274323';  //East=positive, West=negative decimal degrees
+-$SITE['cityname']		= 'Saratoga';
++$SITE['latitude']		= '47.310';    //North=positive, South=negative decimal degrees
++$SITE['longitude']		= '-122.360';  //East=positive, West=negative decimal degrees
++$SITE['cityname']		= 'Federal Way';
+ 
+ $SITE['tz'] 			= 'America/Los_Angeles'; //NOTE: this *MUST* be set correctly to
+ // translate UTC times to your LOCAL time for the displays.
+@@ -162,7 +161,7 @@ $SITE['WXSIMscript'] 	= 'plaintext-parser.php'; // script for decoding plaintext
+ $SITE['defaultlang']	= 'en';   // 'en' for English (WXSIM plaintext-parser.php)
+ 
+ # fcsturlNWS is the point-printable forecast URL from http://www.weather.gov/ (used by advforecast2.php)
+-$SITE['fcsturlNWS']		= 'http://forecast.weather.gov/MapClick.php?CityName=Saratoga&state=CA&site=MTR&textField1=37.2639&textField2=-122.022&e=1&TextType=2';
++$SITE['fcsturlNWS']		= 'http://forecast.weather.gov/MapClick.php?CityName=Federal Way&state=WA&site=ATX&textField1=47.31&textField2=-122.31&e=1&TextType=2';
+ $SITE['fcsticonsdir'] = './forecast/images/'; // NOAA-style icons for NWS, WU, WXSIM forecast scripts
+ $SITE['fcsticonstype']= '.jpg'; // default type='.jpg' -- use '.gif' for animated icons from http://www.meteotreviglio.com/
+ // in the following section, enable settings for ONE primary forecast organization
+@@ -174,15 +173,7 @@ $SITE['fcstorg']		= 'NWS';    // set to 'NWS' for NOAA NWS
+ 
+ $SITE['NWSforecasts']   = array( // for the advforecast2.php V3.xx version script
+ // use "Zone|Location|Point-printableURL",  as entries .. first one will be the default forecast.
+-  "CAZ513|Saratoga|http://forecast.weather.gov/MapClick.php?CityName=Saratoga&state=CA&site=MTR&textField1=37.2639&textField2=-122.022&e=1&TextType=2",
+-"CAZ513|Los Gatos|http://forecast.weather.gov/MapClick.php?CityName=Los+Gatos&state=CA&site=MTR&textField1=37.2267&textField2=-121.974&e=0&TextType=2",
+-"CAZ513|Cupertino|http://forecast.weather.gov/MapClick.php?CityName=Cupertino&state=CA&site=MTR&textField1=37.3231&textField2=-122.031&e=0&TextType=2",
+-"CAZ513|Sunnyvale|http://forecast.weather.gov/MapClick.php?CityName=Sunnyvale&state=CA&site=MTR&textField1=37.3689&textField2=-122.035&e=0&TextType=2",
+-"CAZ513|Santa Clara|http://forecast.weather.gov/MapClick.php?CityName=Santa+Clara&state=CA&site=MTR&textField1=37.3542&textField2=-121.954&e=0&TextType=2",
+-"CAZ513|San Jose|http://forecast.weather.gov/MapClick.php?CityName=San+Jose&state=CA&site=MTR&textField1=37.3394&textField2=-121.894&e=0&TextType=2",
+-"CAZ508|Mountain View|http://forecast.weather.gov/MapClick.php?CityName=Mountain+View&state=CA&site=MTR&textField1=37.3861&textField2=-122.083&TextType=2",
+-"CAZ529|Santa Cruz|http://forecast.weather.gov/MapClick.php?CityName=Santa+Cruz&state=CA&site=MTR&textField1=36.9742&textField2=-122.03&e=0&TextType=2",
+-"CAZ006|San Francisco|http://forecast.weather.gov/MapClick.php?CityName=San+Francisco&state=CA&site=MTR&textField1=37.775&textField2=-122.418&e=0&TextType=2",
++"WAZ5083|Federal Way|http://forecast.weather.gov/MapClick.php?CityName=&state=WA&site=MTR&textField1=47.3&textField2=-122.3&e=1&TextType=2",
+ );
+ 
+ // Uncomment the two lines below to use WXSIM as the ONLY forecast script to use
+@@ -190,7 +181,7 @@ $SITE['NWSforecasts']   = array( // for the advforecast2.php V3.xx version scrip
+ // $SITE['fcstorg']		= 'WXSIM';    // set to 'WXSIM' for WXSIM forecast
+ 
+ // NOAA warning zone
+-$SITE['noaazone'] 		= 'CAZ513'; // used for NOAA advisories and advforecast2.php zone forecasts
++$SITE['noaazone'] 		= 'WAZ508'; // used for NOAA advisories and advforecast2.php zone forecasts
+ $SITE['hurlURL']		= "wxadvisory.php"; // page to launch for details on NOAA advisories
+ // 
+ 
+@@ -200,27 +191,21 @@ $SITE['hurlURL']		= "wxadvisory.php"; // page to launch for details on NOAA advi
+ //    cron to provide updates.
+ // Note: additional/optional nws-alerts configuration is in nws-alerts-config.php file
+ $SITE['NWSalertsCodes'] = array(
+-  "Santa Clara Valley|CAZ513|CAC085",
+-//  "Santa Cruz Mtns|CAZ512|CAC081|CAC085|CAC087",
+-  "Santa Cruz|CAZ529|CAC087",
+-//  "Monterey|CAZ530|CAC053",
+-//  "South/East Bay|CAZ508|CAC081",
+-//  "San Mateo Coast|CAZ509|CAC081",
+-//  "San Francisco|CAZ006|CAC075"
++  "Tacoma Area|WAZ509|WAZ509",
+ );
+ $SITE['NWSalertsSidebar'] = true; // =true to insert in menubar, =false no insert to menubar
+ // 
+ 
+ 
+ // Radar settings
+-$SITE['noaaradar']		= 'MUX';   		// LAST 3 characters of NOAA Radar Site ID
++$SITE['noaaradar']		= 'ATX';   		// LAST 3 characters of NOAA Radar Site ID
+ 										// e.g. Radar KMUX has $SITE['noaaradar'] = 'MUX';
+-$SITE['WUregion']	= 'sw';				// Wunderground regional maps
++$SITE['WUregion']	= 'nw';				// Wunderground regional maps
+ // 'sw'=SouthWest, 'nw'=NorthWest, 'mw'=Midwest
+ // 'sp'=South Central, 'ne'=North East, 'se'=South East
+ 
+ // GRLevel3 Radar image settings (for wxgr3radar.php and radar-status.php scripts
+-$SITE['GR3radar']	= 'kmux';	// set to lower-case full name of NEXRAD radar site
++$SITE['GR3radar']	= 'ksea';	// set to lower-case full name of NEXRAD radar site
+ $SITE['GR3DIR']		= '/GR3'; 	// set to directory for GRLevel3 images (or '.' for root directory
+ $SITE['GR3type']	= 'cr';		// radar image type 'cr','br','cr248','br1' etc.
+ $SITE['GR3img']		= 'jpg';	// GR3 image type 'jpg' or 'png'

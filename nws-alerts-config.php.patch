@@ -1,0 +1,35 @@
+diff --git a/nws-alerts-config.php b/nws-alerts-config.php
+index fff2b82..aaed1ac 100644
+--- a/nws-alerts-config.php
++++ b/nws-alerts-config.php
+@@ -11,13 +11,7 @@
+ //   when using the Saratoga Base-USA template set
+ 
+ $myZC = array(
+-  "Santa Clara Valley|CAZ513|CAC085",
+-//  "Santa Cruz Mtns|CAZ512|CAC081|CAC085|CAC087",
+-  "Santa Cruz|CAZ529|CAC087",
+-//  "Monterey|CAZ530|CAC053",
+-//  "South/East Bay|CAZ508|CAC081",
+-//  "San Mateo Coast|CAZ509|CAC081",
+-//  "San Francisco|CAZ006|CAC075"
++//  "Tacoma Area|WAZ509|SEW509"
+ );
+ 
+ // MAIN SETTINGS
+@@ -71,7 +65,7 @@ $useIcons      = 3;                         // select number below
+ 
+ // XML PAGE
+ $useXML   = true;                           // true=create XML RSS feed   false=not using RSS feed
+-$rssTitle = 'SF Bay Area Weather Alerts'; // title for the RSS/XML page 
++$rssTitle = 'Tacoma Area Weather Alerts'; // title for the RSS/XML page 
+ 
+ 
+ // GOOGLE MAP
+@@ -106,4 +100,4 @@ if (isset($_REQUEST['sce']) && ( strtolower($_REQUEST['sce']) == 'view' or
+    readfile($filenameReal);
+    exit;
+ } 
+-?>
+\ No newline at end of file
++?>
